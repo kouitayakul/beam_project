@@ -21,14 +21,20 @@ git clone https://yourrepositorylink.com/path/to/repo
 cd beam_project
 ```
 
-2. Set up a virtual environment
+2. Make sure you have Python installed on your machine
+
+```
+python --version
+```
+
+3. Set up a virtual environment
 
 ```
 python -m venv venv
 source venv/bin/activate
 ```
 
-3. Install required packages
+4. Install required packages
 
 ```
 pip install -r requirements.txt
@@ -78,13 +84,13 @@ Here are example commands you can run to download files using the FTP protocol:
 Single URI:
 
 ```
-python main.py ftp://test.rebex.net/pub/example/KeyGenerator.png --retries 2
+python main.py ftp://test.rebex.net/pub/example/readme.txt --retries 2
 ```
 
 Mutiple URIs:
 
 ```
-python main.py ftp://test.rebex.net/pub/example/KeyGenerator.png ftp://test.rebex.net/pub/example/ResumableTransfer.png ftp://test.rebex.net/pub/example/pocketftp.png --retries 2
+python main.py ftp://test.rebex.net/pub/example/readme.txt ftp://test.rebex.net/pub/example/winceclient.png ftp://test.rebex.net/pub/example/winceclientSmall.png --retries 2
 ```
 
 ### Testing SFTP Download(s)
@@ -104,7 +110,7 @@ Please follow the _Testing SFTP Download(s)_ step to set up a temporary SFTP ser
 Example command:
 
 ```
-python main.py http://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf https://freetestdata.com/wp-content/uploads/2022/02/Free_Test_Data_1MB_MP4.mp4 https://freetestdata.com/wp-content/uploads/2021/10/Free_Test_Data_1MB_MOV.mov ftp://test.rebex.net/pub/example/KeyGenerator.png ftp://test.rebex.net/pub/example/ResumableTransfer.png ftp://test.rebex.net/pub/example/pocketftp.png --retries 2
+python main.py http://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf https://freetestdata.com/wp-content/uploads/2022/02/Free_Test_Data_1MB_MP4.mp4 https://freetestdata.com/wp-content/uploads/2021/10/Free_Test_Data_1MB_MOV.mov ftp://test.rebex.net/pub/example/readme.txt ftp://test.rebex.net/pub/example/winceclient.png ftp://test.rebex.net/pub/example/winceclientSmall.png --retries 2
 ```
 
 ### Name Crashes from Different Resources
