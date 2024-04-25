@@ -17,7 +17,7 @@ A Python application designed to download files from HTTP/HTTPS, FTP, and SFTP p
 1. Clone the repository
 
 ```
-git clone https://yourrepositorylink.com/path/to/repo
+git clone https://github.com/kouitayakul/beam_project.git
 cd beam_project
 ```
 
